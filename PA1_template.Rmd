@@ -19,7 +19,9 @@ output:
 
 
 ## What is mean total number of steps taken per day?
+
 ```{r}
+
   StepsTotal <- aggregate(steps ~ date, data = activity, sum, na.rm = TRUE)
   head(StepsTotal)
 
